@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!--Login Section-->
+    <div id="loginSection" class="d-none">
+        <div id="mobileViewLoginSection" class="d-sm-block d-md-none">
+            <div class="p-4 bg-home-page">
+                <img class="netflix-logo" src="https://i.ibb.co/fdZRBqyx/Logonetflix.png" alt="Logonetflix" border="0">
+                <form class="pl-3 mt-4">
+                    <h1 class="sign-heading">Sign In</h1>
+                    <input type="text" alt="user_email_or_mobile_number" class="p-2 mt-4 user-id-input" placeholder="Email or mobile number" />
+                    <p class="d-none"></p>
+                    <input type="password" alt="password" class="p-2 mt-4 user-password-input" placeholder="Password" />
+                    <p class="d-none"></p>
+                    <button id="signButton" href="#homeSection" class="mt-3 sign-button">Sign In</button>
+                    <p class="mt-3 mb-3 text-center text-or">OR</p>
+                    <button class="sign-in-code-button">Use a sign-in code</button>
+                    <div class="mt-3 mb-3 text-center"><a class="forget-password-text">Forget password?</a></div>
+                    <div class="pt-2 d-flex flex-row">
+                        <div class="checkbox-align">
+                            <input type="checkbox" id="rememberMe" class=" remember-me-box" />
+                        </div>
+                        <div class="label-align">
+                            <label for="rememberMe" class=" text-white">Remember me</label>
+                        </div>
+                    </div>
+                    <div class="pt-2">
+                        <span class="signup-ques">New to Netflix?</span>
+                        <a class="signup-text">Sign up now.</a>
+                    </div>
+                    <p class="mb-0 pt-3 verify-text">This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+                    <a style="text-decoration: underline;" class="learn-more" href="">Learn more.</a>
+                </form>
+
+            </div>
+            <div class="p-3 text-white p-0 home-page-bottom">
+                <p style="color:#9c9a9c;">Questions? Call 000-800-919-1743 (Toll-Free)</p>
+                <div class="mb-4 d-flex flex-row justify-content-between">
+                    <div>
+                        <a class="home-page-footer-links">FAQ</a>
+                        <p></p>
+                        <a class="home-page-footer-links">Terms of Use</a>
+                        <p></p>
+                        <a class="home-page-footer-links">Cookie Preferences</a>
+                    </div>
+                    <div>
+                        <a class="home-page-footer-links">Help Centre</a>
+                        <p></p>
+                        <a class="home-page-footer-links">Privacy</a>
+                        <p></p>
+                        <a class="home-page-footer-links">Corporate Information</a>
+                    </div>
+                </div>
+                <select class="language-button">
+                    <option>English</option>
+                    <option>Hindi</option>
+                </select>
+            </div>
+        </div>
+        <div id="desktopViewLoginSection" class="d-none d-md-block desktop-home-bg">
+            <div id="desktopViewHomeTop" class="transparent-black-for-home">
+                <img class="mt-4 ml-4 netflix-logo" src="https://i.ibb.co/fdZRBqyx/Logonetflix.png" alt="Logonetflix" border="0">
+                <div class=" desktop-home-padding d-flex flex-row justify-content-center">
+                    <form class="desktop-home-form mt-4">
+                        <h1 class="sign-heading">Sign In</h1>
+                        <input type="text" alt="user_email_or_mobile_number" class="p-2 mt-4 user-id-input" placeholder="Email or mobile number" />
+                        <p class="d-none"></p>
+                        <input type="password" alt="password" class="p-2 mt-4 user-password-input" placeholder="Password" />
+                        <p class="d-none"></p>
+                        <button class="mt-3 sign-button">Sign In</button>
+                        <p class="mt-3 mb-3 text-center text-or">OR</p>
+                        <button class="sign-in-code-button">Use a sign-in code</button>
+                        <div class="mt-3 mb-3 text-center"><a class="forget-password-text">Forget password?</a></div>
+                        <div class="pt-2 d-flex flex-row">
+                            <div class="checkbox-align">
+                                <input type="checkbox" id="desktoprememberMe" class=" remember-me-box" />
+                            </div>
+                            <div class="label-align">
+                                <label for="desktoprememberMe" class=" text-white">Remember me</label>
+                            </div>
+                        </div>
+                        <div class="pt-2">
+                            <span class="signup-ques">New to Netflix?</span>
+                            <a class="signup-text">Sign up now.</a>
+                        </div>
+                        <p class="mb-0 pt-3 verify-text">This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+                        <a style="text-decoration: underline;" class="learn-more" href="">Learn more.</a>
+                    </form>
+                </div>
+            </div>
+            <div id="desktopViewHomeBottom">
+                <div class="p-4 pl-4 pr-4 text-white p-0 home-page-bottom">
+                    <p class="ml-5 mr-5" style="color:#9c9a9c;">Questions? Call 000-800-919-1743 (Toll-Free)</p>
+                    <div class="mb-4 ml-5 mr-5 d-flex flex-row justify-content-between">
+                        <div>
+                            <a class="home-page-footer-links">FAQ</a>
+                            <p></p>
+                            <a class="home-page-footer-links">Cookie Preferences</a>
+                            <p></p>
+                        </div>
+                        <div>
+                            <a class="home-page-footer-links">Help Centre</a>
+                            <p></p>
+                            <a class="home-page-footer-links">Corporate Information</a>
+                            <p></p>
+                        </div>
+                        <div>
+                            <a class="home-page-footer-links">Terms of use</a>
+                        </div>
+                        <div>
+                            <a class="home-page-footer-links">Privacy</a>
+                        </div>
+                    </div>
+                    <select class="ml-5 mr-5 language-button">
+                        <option>English</option>
+                        <option>Hindi</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Home Section-->
+    <div id="homeSection" class="">
+        <div class="p-3 home-section-bg">
+            <div class="mb-2 d-flex flex-row justify-content-between">
+                <h1 style="font-weight:bold; font-size:24px;">For Rohan</h1>
+                <div class="p-2"><i class="search-logo fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <button class="homepage-top-btn">Tv Shows</button>
+            <button class="homepage-top-btn">Movies</button>
+            <select style="width:90px;" class="category-btn homepage-top-btn">
+                <option>Categories</option>
+                <option>English</option>
+                <option>Tamil</option>
+                <option>WWE</option>
+                <option>Action</option>
+                <option>Sports</option>
+            </select>
+            <div class="mt-4 mr-3 ml-3 trending-movie-con">
+                <div class="trending-movie-obj">
+                    <div class="trending-movie-bottom-card">
+                        <p>Deadpan · Chilling · Dark Comedy</p>
+                        <div>
+                            <button class="trending-movie-btn-1"><i class="fa-solid fa-play"></i> Play</button>
+                            <button class="trending-movie-btn-2"><i class="fa-solid fa-plus"></i> My List</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movies-con mt-4">
+                <div class="top-rated-movie-con">
+                    <h1 class="pt-4" style="font-size:23px; font-weight:bold;">Trending Now</h1>
+                    <div class="top-rated-movie-list" id="newOnNetflix"></div>
+                    <h1 class="pt-4" style="font-size:23px; font-weight:bold;">Top Rated </h1>
+                    <div class="top-rated-movie-list" id="netflixTopRated"></div>
+                    <h1 class="pt-4" style="font-size:23px; font-weight:bold;">Netflix Originals</h1>
+                    <div class="top-rated-movie-list" id="netflixOriginals"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Each Movie Details Modal-->
+    <div id="eachMovieContainer">
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="card-bg modal-content">
+                    <div class="modal-header">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe id="movieTrailer" class="embed-responsive-item" allowfullscreen></iframe>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="logo" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 id="movieTitle">Wednesday</h4>
+                        <p id="movieDetails">2025 U/A 16+</p>
+                        <p id="movieDescription">Smart, sarcastic and a little dead inside, Wednesday Addams investigates twisted mysteries while making new friends — and foes — at Nevermore Academy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="index.js"></script>
+</body>
+
+</html>
